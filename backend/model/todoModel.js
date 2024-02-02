@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const todoSchema = new mongoose.Schema({
   title: {
     type: String,
-    required: true,
+    required: [true, "Must have a title"],
     minLength: [3, "Todo title must be atleast 3 characters"],
     trim: true,
   },
