@@ -2,7 +2,14 @@
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        pop: ["Poppins"],
+        inter: ["Inter"],
+        os: ["Open Sans"],
+        mons: ["Montserrat"],
+      },
+    },
   },
   plugins: [],
 };
